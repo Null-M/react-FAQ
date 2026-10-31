@@ -1,0 +1,88 @@
+/* for background image to fit in all screen */
+.background-image {
+  width: 100%;
+}
+/* color of background  */
+body {
+  background-color: #f6e5ff;
+  height: 100vh;
+}
+/* countainer that holds everything in it (background IMG+FAQs) */
+.grand-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* OUTER DIV FOR FAQs */
+.parent {
+  z-index: 10;
+  background-color: white;
+  width: 40%;
+  border-radius: 15px;
+  margin-top: -12rem;
+  padding: 45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.147);
+}
+
+/* INNER DIV */
+.child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* STAR + FAQs */
+.heading {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+/* FAQs */
+.heading h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 4rem;
+}
+
+/* Star */
+.heading img {
+  margin-top: -5px;
+}
+/* Container that holds questions +awnsers */
+.question-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+/* holds span and button */
+.question {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* font for questions */
+.question span {
+  font-weight: bold;
+  font-size: 18px;
+}
+/* hidden awnser */
+.awnser {
+  display: none;
+  color: #a7a7a7;
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* on clicking button they will show */
+.awnser.active {
+  display: block;
+}
+.child hr {
+  margin: 10px 0 10px 0;
+  padding: 0;
+  color: #0000003a;
+}
